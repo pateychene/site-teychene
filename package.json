@@ -1,0 +1,7 @@
+{
+  "name": "site-cabinet",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Site vitrine du cabinet, généré à partir de content/*.json",
+  "scripts": { "build": "node build.js" }
+}

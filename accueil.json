@@ -1,0 +1,72 @@
+{
+  "seo_titre": "Dr André Teychené — Médecine esthétique à Carcassonne",
+  "seo_description": "Cabinet de médecine esthétique du Dr André Teychené à Carcassonne (Aude). Injections d'acide hyaluronique, toxine botulique, consultation et suivi personnalisés.",
+  "hero": {
+    "eyebrow": "Médecine esthétique · Carcassonne, Aude",
+    "titre": "Une médecine esthétique juste, discrète et sur mesure.",
+    "intro": "Le Dr André Teychené vous reçoit à Carcassonne pour des soins d'harmonisation du visage — acide hyaluronique, toxine botulique — pensés au cas par cas, avec l'exigence d'un médecin avant tout.",
+    "bouton_principal": "Prendre rendez-vous",
+    "bouton_secondaire": "Découvrir les actes proposés",
+    "mention_1_titre": "Sur rendez-vous",
+    "mention_1_texte": "Consultation préalable systématique",
+    "photo": ""
+  },
+  "bandeau": [
+    "Médecin diplômé — ancien généraliste reconverti",
+    "Consultation individuelle avant tout acte",
+    "Produits certifiés, traçabilité assurée",
+    "Cabinet à Carcassonne, Aude"
+  ],
+  "soins": {
+    "eyebrow": "Ce que je propose",
+    "titre": "Des soins d'harmonisation, jamais de transformation forcée",
+    "intro": "L'objectif d'une consultation esthétique est de préserver la cohérence d'un visage, pas de le standardiser. Chaque geste est expliqué, discuté, et réalisable ou non selon votre situation.",
+    "cartes": [
+      {
+        "etiquette": "Acte principal",
+        "titre": "Acide hyaluronique",
+        "texte": "Comblement et redéfinition des volumes du visage (lèvres, pommettes, sillons), avec des produits résorbables et une approche progressive.",
+        "mise_en_avant": true
+      },
+      {
+        "etiquette": "Acte principal",
+        "titre": "Toxine botulique",
+        "texte": "Atténuation des rides d'expression (front, contour des yeux) pour un résultat naturel, sans figer les traits.",
+        "mise_en_avant": true
+      },
+      {
+        "etiquette": "Autres soins",
+        "titre": "Fils tenseurs & peelings",
+        "texte": "Selon les indications, en complément ou en alternative aux injections. Discuté au cas par cas en consultation.",
+        "mise_en_avant": false
+      }
+    ],
+    "bouton": "Voir le détail de tous les actes →"
+  },
+  "etapes": {
+    "eyebrow": "Déroulement",
+    "titre": "Comment se passe un premier rendez-vous",
+    "items": [
+      { "titre": "Échange", "texte": "Vous exposez votre demande, sans engagement ni acte réalisé ce jour-là si vous le souhaitez." },
+      { "titre": "Examen", "texte": "Analyse du visage, antécédents médicaux, contre-indications éventuelles." },
+      { "titre": "Proposition", "texte": "Un plan de soin réaliste vous est présenté, avec ses limites et alternatives." },
+      { "titre": "Suivi", "texte": "Un contrôle est proposé après l'acte pour évaluer le résultat et ajuster si besoin." }
+    ]
+  },
+  "medecin": {
+    "eyebrow": "Le médecin",
+    "titre": "D'une médecine générale à une médecine esthétique responsable",
+    "texte": "Après plusieurs années d'exercice en tant que médecin généraliste, le Dr André Teychené s'est formé à la médecine esthétique pour exercer autrement, en gardant la même exigence de sécurité et d'écoute qu'en médecine générale.\n\nCette double expérience se traduit par une approche prudente : chaque demande est d'abord entendue comme une question médicale, avant d'être une question esthétique.",
+    "bouton": "En savoir plus sur le parcours du Dr Teychené",
+    "photo": ""
+  },
+  "notice": {
+    "titre": "Une information, pas une promotion",
+    "texte": "Conformément aux règles de déontologie médicale, ce site a une vocation informative. Il ne présente ni tarifs promotionnels, ni comparaisons, ni photos avant/après. Chaque acte esthétique nécessite une consultation médicale préalable et n'est pas nécessairement adapté à toutes les situations."
+  },
+  "cta": {
+    "titre": "Parlons de votre demande",
+    "texte": "La première consultation permet de faire le point, sans obligation d'engagement.",
+    "bouton": "Prendre rendez-vous"
+  }
+}

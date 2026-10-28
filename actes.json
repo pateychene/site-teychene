@@ -1,0 +1,50 @@
+{
+  "seo_titre": "Les actes proposés — Dr André Teychené, Carcassonne",
+  "seo_description": "Détail des actes de médecine esthétique proposés par le Dr André Teychené à Carcassonne : acide hyaluronique, toxine botulique, fils tenseurs, peelings.",
+  "banniere": {
+    "eyebrow": "Les actes",
+    "titre": "Des gestes précis, expliqués avant tout",
+    "texte": "Chaque acte est présenté ici à titre informatif. Sa pertinence pour votre situation ne peut être confirmée qu'après un examen en consultation."
+  },
+  "groupes": [
+    {
+      "eyebrow": "Acte principal",
+      "titre": "Injections d'acide hyaluronique",
+      "intro": "L'acide hyaluronique est une substance résorbable, injectée pour restaurer ou redéfinir certains volumes du visage : lèvres, pommettes, cernes creux, sillons naso-géniens, ovale du visage.",
+      "cartes": [
+        { "etiquette": "Indication", "titre": "Perte de volume", "texte": "Comblement des creux liés à l'âge ou à la morphologie (cernes, tempes, pommettes)." },
+        { "etiquette": "Indication", "titre": "Redéfinition", "texte": "Redessiner un contour (lèvres, ovale du visage, ligne mandibulaire) de façon mesurée." },
+        { "etiquette": "À savoir", "titre": "Produit résorbable", "texte": "L'effet s'estompe progressivement, ce qui permet d'ajuster le résultat dans le temps." }
+      ]
+    },
+    {
+      "eyebrow": "Acte principal",
+      "titre": "Toxine botulique",
+      "intro": "Utilisée pour atténuer les rides d'expression (front, glabelle, contour des yeux), la toxine botulique agit en relâchant temporairement certains muscles du visage.",
+      "cartes": [
+        { "etiquette": "Indication", "titre": "Rides du front", "texte": "Atténuation des rides horizontales liées aux expressions répétées." },
+        { "etiquette": "Indication", "titre": "Pattes d'oie", "texte": "Adoucissement du contour de l'œil, sans figer le regard." },
+        { "etiquette": "À savoir", "titre": "Effet temporaire", "texte": "L'effet dure plusieurs mois ; des séances d'entretien sont proposées si vous le souhaitez." }
+      ]
+    },
+    {
+      "eyebrow": "Autres soins",
+      "titre": "Selon les indications",
+      "intro": "D'autres approches peuvent être envisagées, seules ou en complément, en fonction de votre demande et de votre examen clinique.",
+      "cartes": [
+        { "etiquette": "Sur indication", "titre": "Fils tenseurs", "texte": "Repositionnement discret de certains tissus du visage, pour un effet de soutien." },
+        { "etiquette": "Sur indication", "titre": "Peelings", "texte": "Amélioration de la texture et de l'éclat de la peau par exfoliation contrôlée." },
+        { "etiquette": "Sur indication", "titre": "Mésothérapie", "texte": "Micro-injections pour la revitalisation et l'hydratation profonde de la peau." }
+      ]
+    }
+  ],
+  "notice": {
+    "titre": "Contre-indications et limites",
+    "texte": "Certaines situations (grossesse, allaitement, troubles de la coagulation, allergies connues, certains traitements en cours) peuvent contre-indiquer un acte. Ces éléments sont systématiquement passés en revue lors de la consultation, avant toute décision."
+  },
+  "cta": {
+    "titre": "Une question sur un acte en particulier ?",
+    "texte": "La consultation reste le meilleur moment pour évaluer ce qui est adapté à votre visage.",
+    "bouton": "Prendre rendez-vous"
+  }
+}

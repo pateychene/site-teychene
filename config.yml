@@ -1,0 +1,233 @@
+# ============================================================
+#  Configuration de l'espace d'administration (Sveltia CMS)
+#  ► À MODIFIER UNE SEULE FOIS : la ligne "repo" ci-dessous.
+#    Remplacez-la par  votre-identifiant-github/nom-du-depot
+#    (exemple : jean-dupont/site-teychene)
+# ============================================================
+backend:
+  name: github
+  repo: VOTRE-IDENTIFIANT-GITHUB/NOM-DU-DEPOT
+  branch: main
+
+media_folder: static/images/uploads
+public_folder: /images/uploads
+
+collections:
+  # ------------------------------------------------------------
+  - name: reglages
+    label: "1 · Réglages du cabinet"
+    files:
+      - name: settings
+        label: "Coordonnées et informations légales"
+        file: content/settings.json
+        format: json
+        fields:
+          - { label: "Nom affiché en haut du site", name: nom, widget: string }
+          - { label: "Sous-titre sous le nom", name: sous_titre, widget: string }
+          - { label: "Initiales (affichées à la place de la photo tant qu'il n'y en a pas)", name: monogramme, widget: string, required: false }
+          - { label: "Logo (facultatif)", name: logo, widget: image, required: false, hint: "Image au format PNG ou SVG, fond transparent de préférence." }
+          - { label: "Numéro de rue", name: adresse_numero, widget: string, required: false, hint: "Ex. 12" }
+          - { label: "Rue", name: adresse_rue, widget: string }
+          - { label: "Code postal", name: code_postal, widget: string }
+          - { label: "Ville", name: ville, widget: string }
+          - { label: "Téléphone", name: telephone, widget: string }
+          - { label: "Email de contact", name: email, widget: string, required: false }
+          - { label: "Horaires", name: horaires, widget: string, hint: "Ex. Du lundi au vendredi, 9h–18h, sur rendez-vous" }
+          - { label: "Numéro RPPS", name: rpps, widget: string, required: false, hint: "11 chiffres, visible sur la carte CPS ou l'annuaire santé." }
+          - { label: "Ordre des médecins (mention légale)", name: ordre, widget: string }
+          - { label: "Hébergeur du site (mention légale)", name: hebergeur, widget: text, required: false, hint: "Nom, adresse et pays de l'hébergeur : à recopier depuis la page « mentions légales » de son site." }
+          - { label: "Adresse du site (avec https://)", name: site_url, widget: string, required: false, hint: "Ex. https://www.dr-teychene-carcassonne.fr — améliore le référencement. Sans « / » final." }
+          - { label: "Formulaire : adresse d'envoi (facultatif)", name: form_endpoint, widget: string, required: false, hint: "Laissez vide pour n'afficher que les boutons « Appeler » et « Écrire un email ». Sinon, collez l'adresse fournie par Formspree (https://formspree.io/f/…) ou Web3Forms (https://api.web3forms.com/submit)." }
+          - { label: "Formulaire : clé d'accès (Web3Forms uniquement)", name: form_access_key, widget: string, required: false }
+
+  # ------------------------------------------------------------
+  - name: pages
+    label: "2 · Pages du site"
+    files:
+      # ---------------- ACCUEIL ----------------
+      - name: accueil
+        label: "Page d'accueil"
+        file: content/accueil.json
+        format: json
+        fields:
+          - { label: "Titre dans Google", name: seo_titre, widget: string, hint: "Environ 60 caractères maximum." }
+          - { label: "Description dans Google", name: seo_description, widget: text, hint: "Environ 160 caractères maximum." }
+          - label: "En-tête (haut de page)"
+            name: hero
+            widget: object
+            fields:
+              - { label: "Petit texte au-dessus du titre", name: eyebrow, widget: string }
+              - { label: "Grand titre", name: titre, widget: string }
+              - { label: "Texte d'introduction", name: intro, widget: text }
+              - { label: "Bouton principal", name: bouton_principal, widget: string }
+              - { label: "Bouton secondaire", name: bouton_secondaire, widget: string }
+              - { label: "Mention 1 : titre", name: mention_1_titre, widget: string }
+              - { label: "Mention 1 : texte", name: mention_1_texte, widget: string }
+              - { label: "Photo", name: photo, widget: image, required: false, hint: "Idéalement un portrait vertical (3:4)." }
+          - label: "Bandeau de confiance (une ligne par information)"
+            name: bandeau
+            widget: list
+            field: { label: "Texte", name: texte, widget: string }
+          - label: "Bloc « Ce que je propose »"
+            name: soins
+            widget: object
+            fields:
+              - { label: "Petit texte au-dessus du titre", name: eyebrow, widget: string }
+              - { label: "Titre", name: titre, widget: string }
+              - { label: "Introduction", name: intro, widget: text }
+              - label: "Cartes"
+                name: cartes
+                widget: list
+                fields:
+                  - { label: "Étiquette", name: etiquette, widget: string, required: false }
+                  - { label: "Titre", name: titre, widget: string }
+                  - { label: "Texte", name: texte, widget: text }
+                  - { label: "Carte mise en avant (fond foncé)", name: mise_en_avant, widget: boolean, default: false, required: false }
+              - { label: "Texte du bouton", name: bouton, widget: string }
+          - label: "Bloc « Déroulement »"
+            name: etapes
+            widget: object
+            fields:
+              - { label: "Petit texte au-dessus du titre", name: eyebrow, widget: string }
+              - { label: "Titre", name: titre, widget: string }
+              - label: "Étapes (numérotées automatiquement)"
+                name: items
+                widget: list
+                fields:
+                  - { label: "Titre", name: titre, widget: string }
+                  - { label: "Texte", name: texte, widget: text }
+          - label: "Bloc « Le médecin »"
+            name: medecin
+            widget: object
+            fields:
+              - { label: "Petit texte au-dessus du titre", name: eyebrow, widget: string }
+              - { label: "Titre", name: titre, widget: string }
+              - { label: "Texte", name: texte, widget: text, hint: "Sautez une ligne entre deux paragraphes." }
+              - { label: "Texte du bouton", name: bouton, widget: string }
+              - { label: "Photo", name: photo, widget: image, required: false }
+          - label: "Encadré d'information"
+            name: notice
+            widget: object
+            fields:
+              - { label: "Titre", name: titre, widget: string }
+              - { label: "Texte", name: texte, widget: text }
+          - label: "Invitation à prendre rendez-vous (bas de page)"
+            name: cta
+            widget: object
+            fields:
+              - { label: "Titre", name: titre, widget: string }
+              - { label: "Texte", name: texte, widget: string, required: false }
+              - { label: "Bouton", name: bouton, widget: string }
+
+      # ---------------- ACTES ----------------
+      - name: actes
+        label: "Page « Les actes »"
+        file: content/actes.json
+        format: json
+        fields:
+          - { label: "Titre dans Google", name: seo_titre, widget: string }
+          - { label: "Description dans Google", name: seo_description, widget: text }
+          - label: "Bandeau de titre"
+            name: banniere
+            widget: object
+            fields:
+              - { label: "Petit texte", name: eyebrow, widget: string }
+              - { label: "Titre", name: titre, widget: string }
+              - { label: "Texte", name: texte, widget: text }
+          - label: "Groupes d'actes (ajoutez-en autant que nécessaire)"
+            name: groupes
+            widget: list
+            fields:
+              - { label: "Petit texte au-dessus du titre", name: eyebrow, widget: string, required: false }
+              - { label: "Titre", name: titre, widget: string }
+              - { label: "Introduction", name: intro, widget: text }
+              - label: "Cartes"
+                name: cartes
+                widget: list
+                fields:
+                  - { label: "Étiquette", name: etiquette, widget: string, required: false }
+                  - { label: "Titre", name: titre, widget: string }
+                  - { label: "Texte", name: texte, widget: text }
+          - label: "Encadré « contre-indications »"
+            name: notice
+            widget: object
+            fields:
+              - { label: "Titre", name: titre, widget: string }
+              - { label: "Texte", name: texte, widget: text }
+          - label: "Invitation à prendre rendez-vous"
+            name: cta
+            widget: object
+            fields:
+              - { label: "Titre", name: titre, widget: string }
+              - { label: "Texte", name: texte, widget: string, required: false }
+              - { label: "Bouton", name: bouton, widget: string }
+
+      # ---------------- LE MÉDECIN ----------------
+      - name: medecin
+        label: "Page « Le médecin »"
+        file: content/medecin.json
+        format: json
+        fields:
+          - { label: "Titre dans Google", name: seo_titre, widget: string }
+          - { label: "Description dans Google", name: seo_description, widget: text }
+          - label: "Bandeau de titre"
+            name: banniere
+            widget: object
+            fields:
+              - { label: "Petit texte", name: eyebrow, widget: string }
+              - { label: "Titre", name: titre, widget: string }
+              - { label: "Texte", name: texte, widget: text }
+          - label: "Parcours"
+            name: parcours
+            widget: object
+            fields:
+              - { label: "Petit texte au-dessus du titre", name: eyebrow, widget: string }
+              - { label: "Titre", name: titre, widget: string }
+              - { label: "Texte", name: texte, widget: text, hint: "Sautez une ligne entre deux paragraphes." }
+              - { label: "Photo", name: photo, widget: image, required: false }
+          - label: "Principes"
+            name: principes
+            widget: object
+            fields:
+              - { label: "Petit texte au-dessus du titre", name: eyebrow, widget: string }
+              - { label: "Titre", name: titre, widget: string }
+              - label: "Cartes"
+                name: cartes
+                widget: list
+                fields:
+                  - { label: "Titre", name: titre, widget: string }
+                  - { label: "Texte", name: texte, widget: text }
+          - label: "Informations professionnelles"
+            name: infos_pro
+            widget: object
+            hint: "Le numéro RPPS, l'Ordre et l'adresse s'ajoutent automatiquement depuis les Réglages."
+            fields:
+              - { label: "Titre", name: titre, widget: string }
+              - { label: "Texte", name: texte, widget: text }
+          - label: "Invitation à prendre rendez-vous"
+            name: cta
+            widget: object
+            fields:
+              - { label: "Titre", name: titre, widget: string }
+              - { label: "Texte", name: texte, widget: string, required: false }
+              - { label: "Bouton", name: bouton, widget: string }
+
+      # ---------------- CONTACT ----------------
+      - name: contact
+        label: "Page « Contact »"
+        file: content/contact.json
+        format: json
+        fields:
+          - { label: "Titre dans Google", name: seo_titre, widget: string }
+          - { label: "Description dans Google", name: seo_description, widget: text }
+          - label: "Bandeau de titre"
+            name: banniere
+            widget: object
+            fields:
+              - { label: "Petit texte", name: eyebrow, widget: string }
+              - { label: "Titre", name: titre, widget: string }
+              - { label: "Texte", name: texte, widget: text }
+          - { label: "Formulaire : titre", name: formulaire_titre, widget: string }
+          - { label: "Formulaire : phrase sous le bouton", name: formulaire_consentement, widget: text }
+          - { label: "Sans formulaire : titre", name: sans_formulaire_titre, widget: string }
+          - { label: "Sans formulaire : texte", name: sans_formulaire_texte, widget: text }

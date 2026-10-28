@@ -1,0 +1,13 @@
+{
+  "seo_titre": "Contact et rendez-vous — Dr André Teychené, Carcassonne",
+  "seo_description": "Prendre rendez-vous avec le Dr André Teychené, médecin esthétique à Carcassonne. Adresse, téléphone et formulaire de contact.",
+  "banniere": {
+    "eyebrow": "Contact",
+    "titre": "Prendre rendez-vous",
+    "texte": "Par téléphone, par email ou via le formulaire. Une consultation est toujours nécessaire avant tout acte."
+  },
+  "formulaire_titre": "Envoyer un message",
+  "formulaire_consentement": "Merci de ne pas indiquer d'informations médicales détaillées dans ce message : elles seront abordées en consultation. Vos informations servent uniquement à répondre à votre demande.",
+  "sans_formulaire_titre": "Nous contacter",
+  "sans_formulaire_texte": "Le plus simple pour prendre rendez-vous est de téléphoner ou d'écrire un email. Merci de ne pas indiquer d'informations médicales détaillées par email : elles seront abordées en consultation."
+}

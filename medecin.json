@@ -1,0 +1,33 @@
+{
+  "seo_titre": "Le Dr André Teychené — Parcours et approche",
+  "seo_description": "Découvrez le parcours du Dr André Teychené, médecin généraliste reconverti à la médecine esthétique, à Carcassonne.",
+  "banniere": {
+    "eyebrow": "Le médecin",
+    "titre": "Dr André Teychené",
+    "texte": "Un parcours de médecine générale, prolongé par une pratique esthétique exigeante."
+  },
+  "parcours": {
+    "eyebrow": "Parcours",
+    "titre": "D'une salle d'attente de médecine générale à un cabinet d'esthétique",
+    "texte": "Le Dr André Teychené a exercé pendant plusieurs années en tant que médecin généraliste, un métier qui l'a formé à l'écoute, à la rigueur diagnostique et à la gestion des situations les plus variées.\n\nCette expérience de terrain l'a naturellement conduit vers la médecine esthétique : un domaine où il retrouve la même exigence, appliquée à une demande différente — celle d'un mieux-être visible, mais toujours pensé dans un cadre médical strict.\n\nInstallé à Carcassonne, il reçoit sa patientèle dans un cadre calme, propice à un échange sans précipitation.",
+    "photo": ""
+  },
+  "principes": {
+    "eyebrow": "Philosophie de soin",
+    "titre": "Trois principes qui guident chaque consultation",
+    "cartes": [
+      { "titre": "Écouter avant de proposer", "texte": "Comprendre la demande réelle derrière une envie esthétique, sans présupposer ce qui « devrait » être corrigé." },
+      { "titre": "Rester dans la mesure", "texte": "Privilégier un résultat naturel et réversible à un effet spectaculaire mais standardisé." },
+      { "titre": "Assumer un cadre médical", "texte": "Chaque acte est réalisé avec la même rigueur qu'un acte de médecine générale : sécurité, traçabilité, suivi." }
+    ]
+  },
+  "infos_pro": {
+    "titre": "Informations professionnelles",
+    "texte": "Docteur en médecine, inscrit au tableau de l'Ordre des médecins."
+  },
+  "cta": {
+    "titre": "Envie d'échanger avant toute décision ?",
+    "texte": "Un premier rendez-vous permet de poser vos questions, sans obligation.",
+    "bouton": "Prendre rendez-vous"
+  }
+}
