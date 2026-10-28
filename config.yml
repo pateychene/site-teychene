@@ -6,7 +6,7 @@
 # ============================================================
 backend:
   name: github
-  repo: VOTRE-IDENTIFIANT-GITHUB/NOM-DU-DEPOT
+  repo: pateychene/site-teychene
   branch: main
 
 media_folder: static/images/uploads
